@@ -1,5 +1,13 @@
 ---
 ---
+#header {
+    .logo {
+        img {
+            margin: 0;
+            max-height: 40px;
+        }
+    }
+}
 #services {
     .box-wrapper {
         margin-bottom: 40px;
