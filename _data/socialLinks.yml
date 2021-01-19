@@ -1,11 +1,7 @@
 - class: twitter
   icon: fa fa-twitter
-  url: "#"
+  url: https://twitter.com/MinDebu
 
 - class: facebook
   icon: fa fa-facebook
-  url: "#"
-
-- class: instagram
-  icon: fa fa-instagram
-  url: "#"
+  url: https://www.facebook.com/mindebu.jsc
