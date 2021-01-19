@@ -1,0 +1,21 @@
+<header id="header" class="fixed-top">
+  <div class="container">
+    <div class="logo float-left">
+      <a href="{{ '/' | relative_url }}"><img src="{{ '/assets/img/logo.png' | relative_url }}" alt="{{ site.title }}" class="img-fluid"></a>
+    </div>
+    <nav class="main-nav float-right d-none d-lg-block">
+      <ul>
+        <li class="{% if page.isHome %}active{% endif %}"><a href="{{ '/' | relative_url }}">ホーム</a></li>
+        <li><a href="#about">会社概要</a></li>
+        <li class="drop-down">
+          <a href="#services">サービス</a>
+          <ul>
+            {%- for service in site.data.services %}
+            <li><a href="{{ service.url | relative_url }}">{{ service.title }}</a></li>
+            {%- endfor %}
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

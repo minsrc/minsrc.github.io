@@ -1,0 +1,20 @@
+---
+---
+#services {
+    .box-wrapper {
+        margin-bottom: 40px;
+    }
+    .box {
+        height: 100%;
+        margin-bottom: 0;
+    }
+}
+#footer {
+    .footer-top {
+        .footer-info {
+            h3 {
+                text-transform: unset;
+            }
+        }
+    }
+}

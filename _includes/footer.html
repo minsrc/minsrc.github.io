@@ -1,0 +1,51 @@
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 footer-info">
+          <h3>{{ site.title }}</h3>
+          <p>{{ site.description | newline_to_br }}</p>
+        </div>
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4>サービス</h4>
+          <ul>
+            {%- for service in site.data.services %}
+            <li><a href="{{ service.url | relative_url }}">{{ service.title }}</a></li>
+            {%- endfor %}
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 footer-contact">
+          <h4>お問い合わせ</h4>
+          <p>
+            {%- for contact in site.data.contacts %}
+            <i class="{{ contact.icon }} mr-2"></i>{{ contact.text }}<br>
+            {%- endfor %}
+          </p>
+          <div class="social-links">
+            {%- for sns in site.data.socialLinks %}
+            <a href="{{ sns.url }}" class="{{ sns.class }}"><i class="{{ sns.icon }}"></i></a>
+            {%- endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>{{ site.title }}</span></strong>. All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<script src="{{ '/assets/lib/jquery/jquery.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/lib/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/lib/jquery.easing/jquery.easing.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/lib/counterup/counterup.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/lib/isotope-layout/isotope.pkgd.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/lib/owl.carousel/owl.carousel.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/lib/waypoints/jquery.waypoints.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/lib/venobox/venobox.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/lib/aos/aos.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>

@@ -1,0 +1,69 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: MinDebu
+description: >- # this means to ignore newlines until "keywords:"
+  システム開発・設計・デザインからサーバー構築まで様々なサービスを提供しております。
+
+  ウェブ制作・スマホアプリ開発・特殊なシステム開発・クラウドサーバー構築など低コストでサポートします。
+keywords: >- # this means to ignore newlines until "baseurl:"
+  mindebu,ミンデブ,web develop,system develop,application develop,develop,
+  application,system,smartphone,front end,back end,frontend,backend,coding,database,
+  開発,ウェブ制作,システム開発,アプリケーション開発,スマートホン,スマホ,アプリ,システム,データベース,コーディング,
+  php,python,ruby,asp,.net,c,c++,cpp,c#,cs,csharp,vb,vb.net,aspx,asp.net,java,swift,objective-c,
+  html,html5,javascript,js,css,css3,scss,sass,less,mvc,bootstrap,jquery,vue.js,vuejs,vue,angular,
+  react,mysql,postgresql,postgre,sql server,sqlserver,sqlite,unity,linux,windows,mac,ios,android,
+  mingine,ミンジン,c2c,ctoc,売買,ec,コマース,eコマース,ecサイト,web,site,website,ウェブ,サイト,ウェブサイト,
+  infra,インフラ,server,サーバー,サーバー構築,host,hosting,ホスト,domain,ドメイン,cloud,クラウド,AWS,GCP,Azure
+  speed,security,安い,安価,速い,高速,安全,安定,安心,高速ロード,seo,seo対策,
+  1coin,1コイン,ワンコイン,500円,480円,1000円以内,1000円未満
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mindebu.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+
+paginate: 6
+paginate_path: '/news/:num/'
+
+excerpt_separator: <!--more-->
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

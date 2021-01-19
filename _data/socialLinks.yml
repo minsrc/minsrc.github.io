@@ -1,0 +1,11 @@
+- class: twitter
+  icon: fa fa-twitter
+  url: "#"
+
+- class: facebook
+  icon: fa fa-facebook
+  url: "#"
+
+- class: instagram
+  icon: fa fa-instagram
+  url: "#"

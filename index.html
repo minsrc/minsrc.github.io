@@ -1,0 +1,73 @@
+---
+layout: default
+isHome: true
+---
+<section id="intro" class="clearfix">
+  <div class="container" data-aos="fade-up">
+    <div class="intro-img" data-aos="zoom-out" data-aos-delay="200">
+      <img src="assets/img/intro-img.svg" alt="" class="img-fluid">
+    </div>
+    <div class="intro-info" data-aos="zoom-in" data-aos-delay="100">
+      <h2>あなたの企業を<br><span>ＩＴ</span>の力で<br>サポートします</h2>
+      <div>
+        <a href="#about" class="btn-get-started scrollto">会社概要</a>
+        <a href="#services" class="btn-services scrollto">サービス</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="main">
+  <section id="about">
+    <div class="container" data-aos="fade-up">
+      <header class="section-header">
+        <h3>会社概要</h3>
+        <p>私たちについて</p>
+      </header>
+      <div class="row about-container">
+        <div class="col-lg-6 content order-lg-1 order-2">
+          <p>お客様の企業に活躍するシステムを作ります。</p>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="fa fa-globe"></i></div>
+            <h4 class="title"><a>ウェブ制作</a></h4>
+            <p class="description">情報管理サイト・ECサイト・ホームページ・ランディングページ・ブログなどウェブシステムの開発</p>
+          </div>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="fa fa-desktop"></i></div>
+            <h4 class="title"><a>デスクトップソフトウェア</a></h4>
+            <p class="description">Windows/Linux/MacOS/サーバー上で使用するソフトウェア・拡張機能・補助ツールなどの開発</p>
+          </div>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="fa fa-tablet"></i></div>
+            <h4 class="title"><a>スマホアプリケーション</a></h4>
+            <p class="description">スマートホンやタブレット端末などで使用するiOSまたはAndroidのアプリケーションの開発</p>
+          </div>
+        </div>
+        <div class="col-lg-6 background order-lg-2" data-aos="zoom-in">
+          <img src="assets/img/about.svg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section-bg">
+    <div class="container" data-aos="fade-up">
+      <header class="section-header">
+        <h3>サービス</h3>
+        <p>提供しているサービスをご紹介します。</p>
+      </header>
+      <div class="row justify-content-center">
+        {%- for service in site.data.services %}
+        {%- assign even = forloop.index | modulo: 2 %}
+        <div class="box-wrapper col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="{% if even == 0 %}200{% else %}100{% endif %}">
+          <div class="box">
+            <div class="icon"><i class="{{ service.icon }}" style="color: {{ service.color }};"></i></div>
+            <h4 class="title"><a href="{{ service.url }}">{{ service.title }}</a></h4>
+            <p class="description">{{ service.description }}</p>
+          </div>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+</main>
