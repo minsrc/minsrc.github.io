@@ -61,7 +61,7 @@ isHome: true
         {%- assign even = forloop.index | modulo: 2 %}
         <div class="box-wrapper col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="{% if even == 0 %}200{% else %}100{% endif %}">
           <div class="box">
-            <div class="icon"><i class="{{ service.icon }}" style="color: {{ service.color }};"></i></div>
+            <div class="icon">{{ service.icon }}</i></div>
             <h4 class="title"><a href="{{ service.url | absolute_url }}">{{ service.title }}</a></h4>
             <p class="description">{{ service.description }}</p>
           </div>
