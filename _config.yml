@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: MinDebu
+title: MinTotal
 description: >- # this means to ignore newlines until "keywords:"
   システム開発・設計・デザインからサーバー構築まで様々なサービスを提供しております。
 
   ウェブ制作・スマホアプリ開発・特殊なシステム開発・クラウドサーバー構築など低コストでサポートします。
 keywords: >- # this means to ignore newlines until "baseurl:"
-  mindebu,ミンデブ,web develop,system develop,application develop,develop,
+  mintotal,ミントータル,web develop,system develop,application develop,develop,
   application,system,smartphone,front end,back end,frontend,backend,coding,database,
   開発,ウェブ制作,システム開発,アプリケーション開発,スマートホン,スマホ,アプリ,システム,データベース,コーディング,
   php,python,ruby,asp,.net,c,c++,cpp,c#,cs,csharp,vb,vb.net,aspx,asp.net,java,swift,objective-c,
@@ -33,9 +33,10 @@ keywords: >- # this means to ignore newlines until "baseurl:"
   mingine,ミンジン,c2c,ctoc,売買,ec,コマース,eコマース,ecサイト,web,site,website,ウェブ,サイト,ウェブサイト,
   infra,インフラ,server,サーバー,サーバー構築,host,hosting,ホスト,domain,ドメイン,cloud,クラウド,AWS,GCP,Azure
   speed,security,安い,安価,速い,高速,安全,安定,安心,高速ロード,seo,seo対策,
-  1coin,1コイン,ワンコイン,500円,480円,1000円以内,1000円未満
+  1coin,1コイン,ワンコイン,500円,480円,1000円以内,1000円未満,
+  mincashier,ミンキャッシャー,レジ,セルフレジ,店舗会計,会計システム,windows
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mindebu.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mintotal.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
